@@ -12,9 +12,9 @@ You can use these scripts as starting point to develop on this further as per yo
 ### Installing Python
 Linux RHEL:
 ```
-sudo yum install python
+sudo yum install python27
 sudo yum install epel-release
-sudo yum install python-pip
+sudo yum install python27-pip
 sudo pip install boto3
 sudo pip install awscli
 ```
