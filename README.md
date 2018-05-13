@@ -2,6 +2,8 @@
 This repository contains the python startup scripts for AWS. Different the AWS service related code is kept under corresponding directories e.g ec2, s3, sqs.
 You can use these scripts as starting point to develop on this further as per your requirement. Do contribute to the repo if you happen to write generic scripts using Python and Boto3 for new or existing AWS services.
 
+>Boto3 Documentation: http://boto3.readthedocs.io/en/latest/index.html
+
 ## Prerequites
 - Install Python 2.7 and Boto3
 - Configure AWS credentials
@@ -49,9 +51,6 @@ Default region name [None]: <--AWS region name e.g ap-south-1 -->
 Default output format [None]: json
 ```
 Boto requires your AWS credentials to talk to AWS. Boto looks for  your credentials in some pre-defined locations as below:
-- In ~/.aws/credentails file. This is configured automatically if you configure AWS CLI as shown above.
-- Environment variables: AWS_ACCESS_KEY and AWS_SECRET_ACCESS_KEY
-
-You can either create this credential file or set the access/secret environment variable in .profile or .bash_profile or windows environment variables.
-
-
+- In ~/.aws/credentails or ~/.aws/config file. This is configured automatically if you configure AWS CLI as shown above.
+- Environment variables: AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+For more options, refer this: [Boto credentials configurations](http://boto3.readthedocs.io/en/latest/guide/configuration.html)
