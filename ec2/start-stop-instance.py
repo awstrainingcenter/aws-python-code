@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-'''Basic script to stop EC2 instance.
+'''Basic script to start or stop EC2 instance.
 Parameters:
 1. Instance id
 '''
@@ -9,13 +9,6 @@ from botocore.exceptions import ClientError
 
 __author__ = "AWS Training Center"
 __copyright__ = "Copyright 2018, AWS Training Center"
-__credits__ = []
-__license__ = "GPL"
-__version__ = "1.0"
-__maintainer__ = "Chetan Agrawal"
-__email__ = "awstrainingcenter@gmail.com"
-__status__ = "Development"
-
 
 if len(sys.argv) != 3:
   print "Usage: %s <action: start/stop> <instance id>" %(sys.argv[0])

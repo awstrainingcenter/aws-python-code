@@ -10,12 +10,6 @@ from urllib2 import urlopen
 
 __author__ = "AWS Training Center"
 __copyright__ = "Copyright 2018, AWS Training Center"
-__credits__ = []
-__license__ = "GPL"
-__version__ = "1.0"
-__maintainer__ = "Chetan Agrawal"
-__email__ = "awstrainingcenter@gmail.com"
-__status__ = "Development"
 
 if len (sys.argv) != 3:
   print "Usage: %s <ami-id> <ssh key pair name>" %(sys.argv[0])
